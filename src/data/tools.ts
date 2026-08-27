@@ -1,0 +1,172 @@
+import { ToolItem } from '../types';
+
+export const TOOLS: ToolItem[] = [
+  // Text & Content
+  {
+    id: 'text-analyzer',
+    nameKey: 'tool_text_analyzer_name',
+    descKey: 'tool_text_analyzer_desc',
+    category: 'text',
+    iconName: 'FileText',
+    tags: ['words', 'characters', 'count', 'case', 'tashkeel', 'clean', 'lines', 'reading time'],
+    isPopular: true,
+  },
+  {
+    id: 'text-diff',
+    nameKey: 'tool_text_diff_name',
+    descKey: 'tool_text_diff_desc',
+    category: 'text',
+    iconName: 'GitCompare',
+    tags: ['compare', 'diff', 'difference', 'code', 'lines', 'merge', 'changes'],
+  },
+  {
+    id: 'markdown-editor',
+    nameKey: 'tool_markdown_editor_name',
+    descKey: 'tool_markdown_editor_desc',
+    category: 'text',
+    iconName: 'FileCode',
+    tags: ['markdown', 'preview', 'html', 'docs', 'editor', 'export', 'cheat sheet'],
+  },
+
+  // Developer Tools
+  {
+    id: 'json-formatter',
+    nameKey: 'tool_json_formatter_name',
+    descKey: 'tool_json_formatter_desc',
+    category: 'developer',
+    iconName: 'Braces',
+    tags: ['json', 'format', 'minify', 'validate', 'tree', 'beautify', 'clean'],
+    isPopular: true,
+  },
+  {
+    id: 'base64-url',
+    nameKey: 'tool_base64_url_name',
+    descKey: 'tool_base64_url_desc',
+    category: 'developer',
+    iconName: 'Binary',
+    tags: ['base64', 'url', 'encode', 'decode', 'hex', 'ascii', 'file', 'binary'],
+    isPopular: true,
+  },
+  {
+    id: 'regex-tester',
+    nameKey: 'tool_regex_tester_name',
+    descKey: 'tool_regex_tester_desc',
+    category: 'developer',
+    iconName: 'Regex',
+    tags: ['regex', 'pattern', 'test', 'matcher', 'groups', 'validate', 'expression'],
+    isNew: true,
+  },
+  {
+    id: 'uuid-gen',
+    nameKey: 'tool_uuid_gen_name',
+    descKey: 'tool_uuid_gen_desc',
+    category: 'developer',
+    iconName: 'Layers',
+    tags: ['uuid', 'guid', 'v4', 'v1', 'nanoid', 'random', 'id', 'generator'],
+  },
+
+  // Security & Crypto
+  {
+    id: 'hash-generator',
+    nameKey: 'tool_hash_generator_name',
+    descKey: 'tool_hash_generator_desc',
+    category: 'security',
+    iconName: 'ShieldCheck',
+    tags: ['hash', 'sha256', 'md5', 'hmac', 'sha512', 'checksum', 'crypto', 'digest'],
+  },
+  {
+    id: 'password-gen',
+    nameKey: 'tool_password_generator_name',
+    descKey: 'tool_password_generator_desc',
+    category: 'security',
+    iconName: 'KeyRound',
+    tags: ['password', 'secure', 'passphrase', 'entropy', 'random', 'generator', 'pin'],
+    isPopular: true,
+  },
+
+  // Media & Design
+  {
+    id: 'qr-generator',
+    nameKey: 'tool_qr_generator_name',
+    descKey: 'tool_qr_generator_desc',
+    category: 'media',
+    iconName: 'QrCode',
+    tags: ['qr', 'code', 'wifi', 'vcard', 'whatsapp', 'link', 'download', 'svg'],
+    isPopular: true,
+  },
+  {
+    id: 'image-compressor',
+    nameKey: 'tool_image_optimizer_name',
+    descKey: 'tool_image_optimizer_desc',
+    category: 'media',
+    iconName: 'Image',
+    tags: ['image', 'compress', 'resize', 'webp', 'png', 'jpeg', 'convert', 'batch'],
+    isNew: true,
+  },
+  {
+    id: 'color-studio',
+    nameKey: 'tool_color_studio_name',
+    descKey: 'tool_color_studio_desc',
+    category: 'media',
+    iconName: 'Palette',
+    tags: ['color', 'hex', 'rgb', 'hsl', 'wcag', 'contrast', 'gradient', 'palette'],
+  },
+  {
+    id: 'svg-optimizer',
+    nameKey: 'tool_svg_optimizer_name',
+    descKey: 'tool_svg_optimizer_desc',
+    category: 'media',
+    iconName: 'Sparkles',
+    tags: ['svg', 'vector', 'minify', 'clean', 'react', 'jsx', 'data uri'],
+    isNew: true,
+  },
+
+  // Math, Converters & Finance
+  {
+    id: 'unit-converter',
+    nameKey: 'tool_unit_converter_name',
+    descKey: 'tool_unit_converter_desc',
+    category: 'converter',
+    iconName: 'Scale',
+    tags: ['unit', 'convert', 'length', 'weight', 'temperature', 'storage', 'speed', 'area', 'energy'],
+    isPopular: true,
+  },
+  {
+    id: 'timezone-converter',
+    nameKey: 'tool_timezone_converter_name',
+    descKey: 'tool_timezone_converter_desc',
+    category: 'time',
+    iconName: 'Clock',
+    tags: ['time', 'timezone', 'world', 'clock', 'meeting', 'hours', 'gmt', 'epoch', 'unix'],
+  },
+  {
+    id: 'currency-converter',
+    nameKey: 'tool_currency_converter_name',
+    descKey: 'tool_currency_converter_desc',
+    category: 'finance',
+    iconName: 'DollarSign',
+    tags: ['currency', 'fx', 'exchange', 'usd', 'sar', 'eur', 'crypto', 'bitcoin'],
+    isPopular: true,
+  },
+  {
+    id: 'loan-calc',
+    nameKey: 'tool_loan_calc_name',
+    descKey: 'tool_loan_calc_desc',
+    category: 'finance',
+    iconName: 'Calculator',
+    tags: ['loan', 'emi', 'mortgage', 'interest', 'amortization', 'monthly payment'],
+  },
+
+  // AI Suite
+  {
+    id: 'ai-smart',
+    nameKey: 'tool_ai_smart_name',
+    descKey: 'tool_ai_smart_desc',
+    category: 'ai',
+    iconName: 'Bot',
+    tags: ['ai', 'gemini', 'translate', 'summarize', 'rephrase', 'explain', 'smart', 'code'],
+    isNew: true,
+    isPopular: true,
+    isAiPowered: true,
+  },
+];

@@ -1,0 +1,6 @@
+{
+  "name": "الأدوات الرقمية الشاملة | Multi-Tool Hub",
+  "description": "منصة أدوات خدمية رقمية متكاملة وسريعة مع دعم متعدد اللغات (العربية، الإنجليزية، الفرنسية، الإسبانية، التركية، الألمانية) وأدوات النصوص والتحويل والبرمجة والصور والذكاء الاصطناعي.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
